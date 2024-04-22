@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            position: relative; /* To make sure image positioning is relative to the container */
+            width: 500px;
+            height: 200px;
+            padding: 30px;
+            background-color: #f0f0f0;
+            border-radius: 20px;
+            box-shadow: -10px -10px 30px #ffffff, 10px 10px 30px #d1d1d1;
+        }
+        .container img {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            padding: 20px;
+            margin: 10px;
+            width: 50px; /* Adjust the width of the image as needed */
+            height: auto;
+            border-radius: 100%;
+            background-color: rgb(211, 211, 211);
+        }
+        .free-img {
+            position: absolute;
+            top: 100px;
+            right: 50vw;
+            width: 100px;
+            height: auto;
+        }
+        h1 {
+            color: #555;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        p {
+            color: #777;
+            margin-bottom: 40px;
+            text-align: left;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #f0f0f0;
+            color: #555;
+            text-decoration: none;
+            border-radius: 20px;
+            box-shadow: -5px -5px 15px #ffffff, 5px 5px 15px #d1d1d1;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn:hover {
+            background-color: #0c59ff;
+            font-weight: bolder;
+            color: #ffffff;
+            transform: scale(1.05)
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="img/pizza.gif" alt="Welcome Image" style="width: 50px;">
+        <h1>Welcome to My Website</h1>
+        <p>
+            This is a basic welcome page created using HTML and CSS.
+        </p>
+        <a href="#" class="btn">Get Started</a>
+    </div>
+
+    <img src="img/ml610xb_nb_v1_v.gif" alt="Relative Image" class="free-img">
+
+</body>
+</html>
